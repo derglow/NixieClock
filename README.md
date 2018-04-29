@@ -1,2 +1,2 @@
 # NixieClock
-![Alt text]( NixieClock/NixieFrontView.jpg?raw=true "Title")
+![Optional Text](../master/NixieFrontView.jpg)
