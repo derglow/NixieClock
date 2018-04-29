@@ -1,0 +1,589 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NixieBoardKiCAD
+LIBS:nixieKiCadrev1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 557E2D7D
+P 1550 3650
+F 0 "#PWR01" H 1550 3400 50  0001 C CNN
+F 1 "GND" H 1550 3500 50  0000 C CNN
+F 2 "" H 1550 3650 60  0000 C CNN
+F 3 "" H 1550 3650 60  0000 C CNN
+	1    1550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 557E2D93
+P 1550 3550
+F 0 "#PWR02" H 1550 3300 50  0001 C CNN
+F 1 "GND" H 1550 3400 50  0000 C CNN
+F 2 "" H 1550 3550 60  0000 C CNN
+F 3 "" H 1550 3550 60  0000 C CNN
+	1    1550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 557E2DAA
+P 1550 3450
+F 0 "#PWR03" H 1550 3200 50  0001 C CNN
+F 1 "GND" H 1550 3300 50  0000 C CNN
+F 2 "" H 1550 3450 60  0000 C CNN
+F 3 "" H 1550 3450 60  0000 C CNN
+	1    1550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 557E2E12
+P 1550 1350
+F 0 "#PWR04" H 1550 1200 50  0001 C CNN
+F 1 "+5V" H 1550 1490 50  0000 C CNN
+F 2 "" H 1550 1350 60  0000 C CNN
+F 3 "" H 1550 1350 60  0000 C CNN
+	1    1550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1350 1550 1450
+$Comp
+L ATMEGA328-A IC?
+U 1 1 557E2C71
+P 2450 2450
+F 0 "IC?" H 1700 3700 40  0000 L BNN
+F 1 "ATMEGA328-A" H 2850 1050 40  0000 L BNN
+F 2 "TQFP32" H 2450 2450 30  0000 C CIN
+F 3 "" H 2450 2450 60  0000 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P?
+U 1 1 55B010AC
+P 4950 950
+F 0 "P?" H 4950 1150 50  0000 C CNN
+F 1 "CONN_02X03" H 4950 750 50  0000 C CNN
+F 2 "" H 4950 -250 60  0000 C CNN
+F 3 "" H 4950 -250 60  0000 C CNN
+	1    4950 950 
+	1    0    0    -1  
+$EndComp
+Text Label 4700 850  2    60   ~ 0
+MISO
+Text Label 4700 950  2    60   ~ 0
+SCK
+Text Label 4700 1050 2    60   ~ 0
+RST
+Text Label 5200 850  0    60   ~ 0
+VCC
+Text Label 5200 950  0    60   ~ 0
+MOSI
+Text Label 5200 1050 0    60   ~ 0
+GND
+Text Label 3600 1650 0    60   ~ 0
+MOSI
+Text Label 3600 1750 0    60   ~ 0
+MISO
+Text Label 3600 1850 0    60   ~ 0
+SCK
+Text Label 3800 2800 2    60   ~ 0
+RST
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B2445A
+P 10750 3600
+F 0 "N?" H 10750 3600 60  0000 C CNN
+F 1 "Nixie_IN-14" H 10750 2200 60  0000 C CNN
+F 2 "" H 10750 3600 60  0000 C CNN
+F 3 "" H 10750 3600 60  0000 C CNN
+	1    10750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B24528
+P 10750 5100
+F 0 "N?" H 10750 5100 60  0000 C CNN
+F 1 "Nixie_IN-14" H 10750 3700 60  0000 C CNN
+F 2 "" H 10750 5100 60  0000 C CNN
+F 3 "" H 10750 5100 60  0000 C CNN
+	1    10750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B24582
+P 2950 5600
+F 0 "N?" H 2950 5600 60  0000 C CNN
+F 1 "Nixie_IN-14" H 2950 4200 60  0000 C CNN
+F 2 "" H 2950 5600 60  0000 C CNN
+F 3 "" H 2950 5600 60  0000 C CNN
+	1    2950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B2462B
+P 1150 4550
+F 0 "N?" H 1150 4550 60  0000 C CNN
+F 1 "Nixie_IN-14" H 1150 3150 60  0000 C CNN
+F 2 "" H 1150 4550 60  0000 C CNN
+F 3 "" H 1150 4550 60  0000 C CNN
+	1    1150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B24693
+P 10750 600
+F 0 "N?" H 10750 600 60  0000 C CNN
+F 1 "Nixie_IN-14" H 10750 -800 60  0000 C CNN
+F 2 "" H 10750 600 60  0000 C CNN
+F 3 "" H 10750 600 60  0000 C CNN
+	1    10750 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Nixie_IN-14 N?
+U 1 1 55B246FE
+P 10750 2100
+F 0 "N?" H 10750 2100 60  0000 C CNN
+F 1 "Nixie_IN-14" H 10750 700 60  0000 C CNN
+F 2 "" H 10750 2100 60  0000 C CNN
+F 3 "" H 10750 2100 60  0000 C CNN
+	1    10750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 55B2499B
+P 4000 2800
+F 0 "R?" V 4080 2800 50  0000 C CNN
+F 1 "R10k" V 4000 2800 50  0000 C CNN
+F 2 "" V 3930 2800 30  0000 C CNN
+F 3 "" H 4000 2800 30  0000 C CNN
+	1    4000 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2800 3850 2800
+$Comp
+L +5V #PWR?
+U 1 1 55B24C2E
+P 4150 2800
+F 0 "#PWR?" H 4150 2650 50  0001 C CNN
+F 1 "+5V" H 4150 2940 50  0000 C CNN
+F 2 "" H 4150 2800 60  0000 C CNN
+F 3 "" H 4150 2800 60  0000 C CNN
+	1    4150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B2507C
+P 9000 800
+F 0 "IC?" H 9000 800 60  0000 C CNN
+F 1 "74141" H 9000 -100 60  0000 C CNN
+F 2 "" H 9000 800 60  0000 C CNN
+F 3 "" H 9000 800 60  0000 C CNN
+	1    9000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B25533
+P 4800 1550
+F 0 "IC?" H 4800 1550 60  0000 C CNN
+F 1 "74141" H 4800 650 60  0000 C CNN
+F 2 "" H 4800 1550 60  0000 C CNN
+F 3 "" H 4800 1550 60  0000 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B25592
+P 9000 2300
+F 0 "IC?" H 9000 2300 60  0000 C CNN
+F 1 "74141" H 9000 1400 60  0000 C CNN
+F 2 "" H 9000 2300 60  0000 C CNN
+F 3 "" H 9000 2300 60  0000 C CNN
+	1    9000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B255EE
+P 9000 3800
+F 0 "IC?" H 9000 3800 60  0000 C CNN
+F 1 "74141" H 9000 2900 60  0000 C CNN
+F 2 "" H 9000 3800 60  0000 C CNN
+F 3 "" H 9000 3800 60  0000 C CNN
+	1    9000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B2566F
+P 3600 4150
+F 0 "IC?" H 3600 4150 60  0000 C CNN
+F 1 "74141" H 3600 3250 60  0000 C CNN
+F 2 "" H 3600 4150 60  0000 C CNN
+F 3 "" H 3600 4150 60  0000 C CNN
+	1    3600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74141 IC?
+U 1 1 55B256CD
+P 9000 5300
+F 0 "IC?" H 9000 5300 60  0000 C CNN
+F 1 "74141" H 9000 4400 60  0000 C CNN
+F 2 "" H 9000 5300 60  0000 C CNN
+F 3 "" H 9000 5300 60  0000 C CNN
+	1    9000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55B25B3E
+P 1550 1650
+F 0 "#PWR?" H 1550 1500 50  0001 C CNN
+F 1 "+5V" H 1550 1790 50  0000 C CNN
+F 2 "" H 1550 1650 60  0000 C CNN
+F 3 "" H 1550 1650 60  0000 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1650 3800 1650
+Wire Wire Line
+	3450 1750 3800 1750
+Wire Wire Line
+	3450 1850 3800 1850
+$Comp
+L C C?
+U 1 1 55B25FCD
+P 1550 2100
+F 0 "C?" H 1575 2200 50  0000 L CNN
+F 1 "C100nF" H 1575 2000 50  0000 L CNN
+F 2 "" H 1588 1950 30  0000 C CNN
+F 3 "" H 1550 2100 60  0000 C CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55B2603B
+P 1550 1950
+F 0 "#PWR?" H 1550 1800 50  0001 C CNN
+F 1 "+5V" H 1550 2090 50  0000 C CNN
+F 2 "" H 1550 1950 60  0000 C CNN
+F 3 "" H 1550 1950 60  0000 C CNN
+	1    1550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55B26079
+P 1550 2250
+F 0 "#PWR?" H 1550 2000 50  0001 C CNN
+F 1 "GND" H 1550 2100 50  0000 C CNN
+F 2 "" H 1550 2250 60  0000 C CNN
+F 3 "" H 1550 2250 60  0000 C CNN
+	1    1550 2250
+	1    0    0    -1  
+$EndComp
+Text Label 10250 900  2    60   ~ 0
+Nix1_1
+Text Label 10250 1000 2    60   ~ 0
+Nix1_2
+Text Label 10250 1100 2    60   ~ 0
+Nix1_3
+Text Label 10250 1200 2    60   ~ 0
+Nix1_4
+Text Label 10250 1300 2    60   ~ 0
+Nix1_5
+Text Label 10250 1400 2    60   ~ 0
+Nix1_6
+Text Label 10250 1500 2    60   ~ 0
+Nix1_7
+Text Label 10250 1600 2    60   ~ 0
+Nix1_8
+Text Label 10250 1700 2    60   ~ 0
+Nix1_9
+Text Label 10250 1800 2    60   ~ 0
+Nix1_0
+Text Label 9450 900  0    60   ~ 0
+Nix1_0
+Text Label 9450 1000 0    60   ~ 0
+Nix1_1
+Text Label 9450 1100 0    60   ~ 0
+Nix1_5
+Text Label 9450 1200 0    60   ~ 0
+Nix1_4
+Text Label 9450 1400 0    60   ~ 0
+Nix1_6
+Text Label 9450 1500 0    60   ~ 0
+Nix1_7
+Text Label 9450 1600 0    60   ~ 0
+Nix1_3
+Text Label 8550 900  2    60   ~ 0
+Nix1_8
+Text Label 8550 1000 2    60   ~ 0
+Nix1_9
+Text Label 8550 1600 2    60   ~ 0
+Nix1_2
+Text Label 10250 2400 2    60   ~ 0
+Nix2_1
+Text Label 10250 2500 2    60   ~ 0
+Nix2_2
+Text Label 10250 2600 2    60   ~ 0
+Nix2_3
+Text Label 10250 2700 2    60   ~ 0
+Nix2_4
+Text Label 10250 2800 2    60   ~ 0
+Nix2_5
+Text Label 10250 2900 2    60   ~ 0
+Nix2_6
+Text Label 10250 3000 2    60   ~ 0
+Nix2_7
+Text Label 10250 3100 2    60   ~ 0
+Nix2_8
+Text Label 10250 3200 2    60   ~ 0
+Nix2_9
+Text Label 10250 3300 2    60   ~ 0
+Nix2_0
+Text Label 9450 2500 0    60   ~ 0
+Nix2_1
+Text Label 9450 2400 0    60   ~ 0
+Nix2_0
+Text Label 9450 2600 0    60   ~ 0
+Nix2_5
+Text Label 9450 2700 0    60   ~ 0
+Nix2_4
+Text Label 9450 2900 0    60   ~ 0
+Nix2_6
+Text Label 9450 3000 0    60   ~ 0
+Nix2_7
+Text Label 9450 3100 0    60   ~ 0
+Nix2_3
+Text Label 8550 2400 2    60   ~ 0
+Nix2_8
+Text Label 8550 2500 2    60   ~ 0
+Nix2_9
+Text Label 8550 3100 2    60   ~ 0
+Nix2_2
+Text Label 10250 3900 2    60   ~ 0
+Nix3_1
+Text Label 10250 4000 2    60   ~ 0
+Nix3_2
+Text Label 10250 4100 2    60   ~ 0
+Nix3_3
+Text Label 10250 4200 2    60   ~ 0
+Nix3_4
+Text Label 10250 4300 2    60   ~ 0
+Nix3_5
+Text Label 10250 4400 2    60   ~ 0
+Nix3_6
+Text Label 10250 4500 2    60   ~ 0
+Nix3_7
+Text Label 10250 4600 2    60   ~ 0
+Nix3_8
+Text Label 10250 4700 2    60   ~ 0
+Nix3_9
+Text Label 10250 4800 2    60   ~ 0
+Nix3_0
+Text Label 9450 3900 0    60   ~ 0
+Nix3_0
+Text Label 9450 4000 0    60   ~ 0
+Nix3_1
+Text Label 9450 4100 0    60   ~ 0
+Nix3_5
+Text Label 9450 4200 0    60   ~ 0
+Nix3_4
+Text Label 9450 4400 0    60   ~ 0
+Nix3_6
+Text Label 9450 4500 0    60   ~ 0
+Nix3_7
+Text Label 9450 4600 0    60   ~ 0
+Nix3_3
+Text Label 8550 3900 2    60   ~ 0
+Nix3_8
+Text Label 8550 4000 2    60   ~ 0
+Nix3_9
+Text Label 8550 4600 2    60   ~ 0
+Nix3_2
+$Comp
+L GND #PWR?
+U 1 1 55B2941A
+P 9450 1300
+F 0 "#PWR?" H 9450 1050 50  0001 C CNN
+F 1 "GND" H 9450 1150 50  0000 C CNN
+F 2 "" H 9450 1300 60  0000 C CNN
+F 3 "" H 9450 1300 60  0000 C CNN
+	1    9450 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55B29925
+P 9450 2800
+F 0 "#PWR?" H 9450 2550 50  0001 C CNN
+F 1 "GND" H 9450 2650 50  0000 C CNN
+F 2 "" H 9450 2800 60  0000 C CNN
+F 3 "" H 9450 2800 60  0000 C CNN
+	1    9450 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55B29960
+P 9450 4300
+F 0 "#PWR?" H 9450 4050 50  0001 C CNN
+F 1 "GND" H 9450 4150 50  0000 C CNN
+F 2 "" H 9450 4300 60  0000 C CNN
+F 3 "" H 9450 4300 60  0000 C CNN
+	1    9450 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55B29ADB
+P 9450 5800
+F 0 "#PWR?" H 9450 5550 50  0001 C CNN
+F 1 "GND" H 9450 5650 50  0000 C CNN
+F 2 "" H 9450 5800 60  0000 C CNN
+F 3 "" H 9450 5800 60  0000 C CNN
+	1    9450 5800
+	0    -1   -1   0   
+$EndComp
+Text Label 10250 5400 2    60   ~ 0
+Nix4_1
+Text Label 10250 5500 2    60   ~ 0
+Nix4_2
+Text Label 10250 5600 2    60   ~ 0
+Nix4_3
+Text Label 10250 5700 2    60   ~ 0
+Nix4_4
+Text Label 10250 5800 2    60   ~ 0
+Nix4_5
+Text Label 10250 5900 2    60   ~ 0
+Nix4_6
+Text Label 10250 6000 2    60   ~ 0
+Nix4_7
+Text Label 10250 6100 2    60   ~ 0
+Nix4_8
+Text Label 10250 6200 2    60   ~ 0
+Nix4_9
+Text Label 10250 6300 2    60   ~ 0
+Nix4_0
+Text Label 9450 5400 0    60   ~ 0
+Nix4_0
+Text Label 9450 5500 0    60   ~ 0
+Nix4_1
+Text Label 9450 5600 0    60   ~ 0
+Nix4_5
+Text Label 9450 5700 0    60   ~ 0
+Nix4_4
+Text Label 9450 5900 0    60   ~ 0
+Nix4_6
+Text Label 9450 6000 0    60   ~ 0
+Nix4_7
+Text Label 9450 6100 0    60   ~ 0
+Nix4_3
+Text Label 8550 5400 2    60   ~ 0
+Nix4_8
+Text Label 8550 5500 2    60   ~ 0
+Nix4_9
+Text Label 8550 6100 2    60   ~ 0
+Nix4_2
+$Comp
+L +5V #PWR?
+U 1 1 55B2A294
+P 8550 1300
+F 0 "#PWR?" H 8550 1150 50  0001 C CNN
+F 1 "+5V" H 8550 1440 50  0000 C CNN
+F 2 "" H 8550 1300 60  0000 C CNN
+F 3 "" H 8550 1300 60  0000 C CNN
+	1    8550 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55B2A7BF
+P 8550 2800
+F 0 "#PWR?" H 8550 2650 50  0001 C CNN
+F 1 "+5V" H 8550 2940 50  0000 C CNN
+F 2 "" H 8550 2800 60  0000 C CNN
+F 3 "" H 8550 2800 60  0000 C CNN
+	1    8550 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55B2A98A
+P 8550 4300
+F 0 "#PWR?" H 8550 4150 50  0001 C CNN
+F 1 "+5V" H 8550 4440 50  0000 C CNN
+F 2 "" H 8550 4300 60  0000 C CNN
+F 3 "" H 8550 4300 60  0000 C CNN
+	1    8550 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 55B2AEB5
+P 8550 5800
+F 0 "#PWR?" H 8550 5650 50  0001 C CNN
+F 1 "+5V" H 8550 5940 50  0000 C CNN
+F 2 "" H 8550 5800 60  0000 C CNN
+F 3 "" H 8550 5800 60  0000 C CNN
+	1    8550 5800
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
